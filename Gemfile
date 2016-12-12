@@ -50,3 +50,14 @@ gem 'faker'
 gem 'will_paginate'
 
 gem 'bootstrap-sass', '~> 3.3.6'
+
+gem 'trix'
+
+
+gem "refile", require: "refile/rails"
+gem "refile-mini_magick"
+
+
+gem "paperclip", "~> 5.0.0"
+
+gem "animate-rails"

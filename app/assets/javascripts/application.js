@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require trix
+//= require refile
+//= require signature_pad
 //= require_tree .

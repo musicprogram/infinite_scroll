@@ -5,5 +5,25 @@
   <%= @sport.name %>
 </p>
 
+
+
+<p><%= image_tag @sport.signature %></p>
+
+<p>
+  <strong>Imagen:</strong>
+  <%= image_tag attachment_url(@user, :image, :fill, 300, 300, format: "jpg") rescue nil %>
+
+</p>
+
+
+<p>
+  <strong>Imagen:</strong>
+  <%= image_tag(@sport.avatar) %>
+  
+
+</p>
+
+
+
 <%= link_to 'Edit', edit_sport_path(@sport) %> |
-<%= link_to 'Back', sports_path %>
+<%= link_to 'Back', sports_path , 'data-no-turbolink' => true %>

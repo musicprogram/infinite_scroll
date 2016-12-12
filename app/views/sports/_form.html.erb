@@ -1,4 +1,5 @@
-<%= form_for(@sport) do |f| %>
+<div class="container">
+  <%= form_for(@sport) do |f| %>
   <% if @sport.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@sport.errors.count, "error") %> prohibited this sport from being saved:</h2>
@@ -13,9 +14,62 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.trix_editor  :name %>
+  </div>
+  
+  
+  <div class="field">
+   
+    <%= f.text_field  :signature, as: :hidden, class:'signature_pad_input' %>
+  </div>
+  
+  
+  
+  
+  <canvas>
+    
+  </canvas>
+  
+  <a class="btn btn-default signature_pad_clear">Clean</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <div class="progress" id='progress-bar' style='display:none;'>
+
+
+
+      <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 0%">
+
+        <span class="sr-only" id='progress-bar-text'></span>
+
+      </div>
+
+    </div>
+  
+  
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.attachment_field :image , direct: true %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :avatar %><br>
+    <%= f.file_field :avatar , direct: true %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Guardar', class:'signature_pad_save' %>
   </div>
 <% end %>
+</div>
