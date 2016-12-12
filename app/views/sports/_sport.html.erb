@@ -1,5 +1,8 @@
 <tr>
   <td><%= sport.name %></td>
+  
+  <td><%= image_tag sport.signature, class:'img-responsive' %></td>
+  <td><%= sport.impressionist_count %></td>
   <td><%= link_to 'Show', sport %></td>
   <td><%= link_to 'Edit', edit_sport_path(sport) %></td>
   <td><%= link_to 'Destroy', sport, method: :delete, data: { confirm: 'Are you sure?' } %></td>

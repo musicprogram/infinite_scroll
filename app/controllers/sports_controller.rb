@@ -10,6 +10,7 @@ class SportsController < ApplicationController
   # GET /sports/1
   # GET /sports/1.json
   def show
+    impressionist(@sport, "message...")
   end
 
   # GET /sports/new

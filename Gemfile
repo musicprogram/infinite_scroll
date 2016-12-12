@@ -61,3 +61,6 @@ gem "refile-mini_magick"
 gem "paperclip", "~> 5.0.0"
 
 gem "animate-rails"
+
+
+gem 'impressionist'
